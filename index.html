@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smooth Toggle with Floating Label</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" crossorigin="anonymous" />
+</head>
+<body>
+
+<div class="password-container">
+  <div class="input-group">
+    <input type="password" id="passwordField" class="password-input" placeholder=" " autocomplete="off" />
+    <label class="floating-label" for="passwordField">Enter password</label>
+    <div class="toggle-visibility" id="toggleVisibility">
+      <i id="eyeClosed" class="ri-eye-close-line active"></i>
+      <i id="eyeOpen" class="ri-eye-line inactive"></i>
+    </div>
+    <div id="capsWarning" class="caps-warning">Caps Lock is ON</div>
+  </div>
+  <button id="submitBtn" class="submit-btn">Submit</button>
+</div>
+
+<!-- Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <p>Password accepted!</p>
+  </div>
+</div>
+
+</body>
+</html>
